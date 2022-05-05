@@ -1,0 +1,562 @@
+$primario: #8D8DAA;
+$fondocajas: #DFDFE2;
+$terciario : #2D2E33;
+
+
+/* Modificacion Estilos Predeterminados */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-image: url(./img/background.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+  }
+  
+  /* Fin modificacion */
+  
+  nav {
+    background: #8D8DAA;
+    height: 81px;
+  }
+  
+  label.logo {
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+  
+    /* margin-top: 20px; */
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Syncopate', sans-serif;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  
+    li {
+      display: inline-block;
+  
+      /* line-height: 80px; */
+      margin-top: 27px !important;
+  
+      /* margin: 0 5px; */
+  
+      a {
+        color: #F7F5F2 !important;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: 'Syncopate', sans-serif;
+      }
+    }
+  }
+  
+  a {
+    &.active, &:hover {
+      background: $fondocajas;
+      transition: .5s;
+    }
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .logoblanco {
+    position: absolute;
+    width: 70px;
+    border-radius: 55%;
+    padding-top: 5px;
+    display: none;
+  }
+  
+  /* Carousel Slider */
+  
+  .img-responsive {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+  
+    /* position: relative; */
+    overflow-x: hidden;
+  }
+  
+  /* Descuentos */
+  
+  .descuentos {
+    background-color: salmon;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+  
+  /* productos */
+  
+  .linea-venus-Title, .linea-maddie-Title {
+    padding-top: 50px;
+    font-family: 'Syncopate', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .productos-area {
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: row;
+    background-color: #fff;
+    padding-bottom: 5rem;
+    row-gap: 7px;
+    column-gap: 3px;
+  
+    > div > img {
+      width: 300px;
+      height: 250px;
+    }
+  }
+  
+  /* Tarjetas */
+  
+  .tarjetas {
+    font-family: 'Syncopate', sans-serif;
+    background-color: #F5F5F5;
+  }
+  
+  .tarjetas-img {
+    width: 80px;
+  }
+  
+  .brubank {
+    border-radius: 50%;
+    width: 70px;
+  }
+  
+  .santander {
+    width: 75px;
+  }
+  
+  .flexbox-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .tarjetas-header {
+    padding-top: 70px;
+  }
+  
+  /* Social bar */
+  
+  .red {
+    position: fixed;
+    top: 200px;
+    z-index: 100000;
+    left: 0;
+  }
+  
+  #facebook a {
+    background: #3b5998;
+    padding: 10px 20px;
+    color: #FFF;
+    width: 55px;
+    transition: all .4s ease;
+    border-radius: 0 1rem 0 0;
+  
+    &:hover {
+      background: #000000;
+      padding: 10px 50px;
+    }
+  }
+  
+  #instagram a {
+    background: #e95950;
+    padding: 10px 20px;
+    color: #FFF;
+    width: 55px;
+    transition: all .4s ease;
+  
+    &:hover {
+      background: #000000;
+      padding: 10px 50px;
+    }
+  }
+  
+  #whatsapp a {
+    background: #4dc247;
+    padding: 10px 20px;
+    color: #FFF;
+    width: 55px;
+    transition: all .4s ease;
+    border-radius: 0 0 1rem 0;
+  
+    &:hover {
+      background: #000000;
+      padding: 10px 50px;
+    }
+  }
+  
+  /* footer */
+  
+  #footer {
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: $terciario;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  div > h6 {
+    color: #00B4DF;
+  }
+  
+  .flex-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-footer > img {
+    width: 70px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  /* Galeria */
+  
+  .galeria-h1, .comprar-h1, .nosotros-h1, .text-encontranos, .tarjetas-header {
+    padding-top: 50px;
+    font-family: 'Syncopate', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .galeria-h1 {
+    font-size: 65px;
+  }
+  
+  /* Comprar */
+  
+  .products {
+    object-fit: cover;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .picture--Comprar {
+    height: 270px;
+  }
+  
+  .comprar-h1 {
+    font-size: 40px;
+  }
+  
+  /* Nosotros */
+  
+  .nosotros-titulo {
+    font-size: 40px;
+    margin-top: 60px;
+    padding-top: 50px;
+    font-family: 'Syncopate', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    background-color: #F5F5F5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .texto-nosotros {
+    margin-top: 50px;
+    font-size: 24px;
+    text-justify: left;
+    background: #8D8DAA;
+    padding: .7em .5em .7em .5em;
+    color: #f5f5f5;
+    border-radius: 20px;
+    font-family: 'Akshar', sans-serif;
+  }
+  
+  iframe {
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  /* Contactar */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+  
+  .form__input, .form__cta {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+    background-color: #f5f5f5;
+    margin-top: 3em;
+  }
+  
+  .form__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+  }
+  
+  .form__title {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+  }
+  
+  .form__input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+  }
+  
+  .form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+  }
+  
+  .form__cta {
+    background-color: #089FE0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .2em;
+    padding: .7em 0;
+    font-weight: 400;
+  }
+  
+  /* /////////////////////MEDIA QUERYS///////////////////////// */
+  
+  @media (max-width: 912px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
+    }
+  
+    nav {
+      ul li a {
+        font-size: 16px;
+      }
+  
+      overflow-x: hidden;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    html {
+      overflow-x: hidden;
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      z-index: 999;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  
+      a {
+        font-size: 20px;
+      }
+    }
+  
+    a {
+      &:hover, &.active {
+        background: none;
+        color: #0082e6;
+      }
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  
+    .carouselExampleCaptions {
+      z-index: 0;
+    }
+  
+    .products {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    iframe {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      overflow-x: hidden;
+    }
+  
+    label.logo {
+      font-size: 15px;
+    }
+  
+    .tarjetas-header {
+      text-align: center;
+    }
+  
+    .productos-area {
+      flex-direction: column;
+    }
+  
+    .products {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .form {
+      padding: 3.5em 1.5em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .products {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    html {
+      overflow-x: hidden;
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      z-index: 999;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  
+      a {
+        font-size: 20px;
+      }
+    }
+  
+    a {
+      &:hover, &.active {
+        background: none;
+        color: #0082e6;
+      }
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  
+    .carouselExampleCaptions {
+      z-index: 0;
+    }
+  
+    .products {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .tarjetas-header {
+      padding-top: 40px;
+    }
+  
+    iframe {
+      width: 450px;
+      height: 450px;
+    }
+  }
