@@ -1,6 +1,20 @@
 $primario: #8D8DAA;
 $fondocajas: #DFDFE2;
 $terciario : #2D2E33;
+$fondotitulo: #f5f5f5;
+
+// Mixin titulos
+
+@mixin titulos{
+  padding-top: 50px;
+  font-family: 'Syncopate', sans-serif;
+  font-style: bold;
+  font-size: 30px;
+  background-color: #F5F5F5;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 
 
 /* Modificacion Estilos Predeterminados */
@@ -25,7 +39,7 @@ $terciario : #2D2E33;
   /* Fin modificacion */
   
   nav {
-    background: #8D8DAA;
+    background: $primario;
     height: 81px;
   }
   
@@ -116,16 +130,14 @@ $terciario : #2D2E33;
   
   /* productos */
   
-  .linea-venus-Title, .linea-maddie-Title {
-    padding-top: 50px;
-    font-family: 'Syncopate', sans-serif;
-    font-style: bold;
-    font-size: 30px;
-    background-color: #F5F5F5;
-    margin-top: 40px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+
+  .linea-venus-Title{
+    @include titulos;
+    .linea-maddie-Title{
+      @include titulos;
+    }
   }
+  
   
   .productos-area {
     padding-top: 4%;
@@ -149,7 +161,7 @@ $terciario : #2D2E33;
   
   .tarjetas {
     font-family: 'Syncopate', sans-serif;
-    background-color: #F5F5F5;
+    background-color: $fondotitulo;
   }
   
   .tarjetas-img {
@@ -243,6 +255,10 @@ $terciario : #2D2E33;
   div > h6 {
     color: #00B4DF;
   }
+
+  #footer p{
+    color:#0082e6
+  }
   
   .flex-icon {
     display: flex;
@@ -258,17 +274,15 @@ $terciario : #2D2E33;
   
   /* Galeria */
   
-  .galeria-h1, .comprar-h1, .nosotros-h1, .text-encontranos, .tarjetas-header {
-    padding-top: 50px;
-    font-family: 'Syncopate', sans-serif;
-    font-style: bold;
-    font-size: 30px;
-    background-color: #F5F5F5;
-    margin-top: 40px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+  .galeria-h1,
+  .comprar-h1,
+  .nosotros-h1,
+  .text-encontranos,
+  .tarjetas-header{
+    @include titulos;
   }
-  
+
+
   .galeria-h1 {
     font-size: 65px;
   }
@@ -294,24 +308,16 @@ $terciario : #2D2E33;
   /* Nosotros */
   
   .nosotros-titulo {
-    font-size: 40px;
-    margin-top: 60px;
-    padding-top: 50px;
-    font-family: 'Syncopate', sans-serif;
-    font-style: bold;
-    font-size: 30px;
-    background-color: #F5F5F5;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    @include titulos;
   }
   
   .texto-nosotros {
     margin-top: 50px;
     font-size: 24px;
     text-justify: left;
-    background: #8D8DAA;
+    background: $primario;
     padding: .7em .5em .7em .5em;
-    color: #f5f5f5;
+    color: $fondotitulo;
     border-radius: 20px;
     font-family: 'Akshar', sans-serif;
   }

@@ -86,7 +86,7 @@ a.active, a:hover {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); }
 
 /* productos */
-.linea-venus-Title, .linea-maddie-Title {
+.linea-venus-Title {
   padding-top: 50px;
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
@@ -95,6 +95,15 @@ a.active, a:hover {
   margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px; }
+  .linea-venus-Title .linea-maddie-Title {
+    padding-top: 50px;
+    font-family: 'Syncopate', sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px; }
 
 .productos-area {
   padding-top: 4%;
@@ -114,7 +123,7 @@ a.active, a:hover {
 /* Tarjetas */
 .tarjetas {
   font-family: 'Syncopate', sans-serif;
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5; }
 
 .tarjetas-img {
   width: 80px; }
@@ -189,6 +198,9 @@ a.active, a:hover {
 div > h6 {
   color: #00B4DF; }
 
+#footer p {
+  color: #0082e6; }
+
 .flex-icon {
   display: flex;
   align-items: center; }
@@ -200,7 +212,11 @@ div > h6 {
   align-items: center; }
 
 /* Galeria */
-.galeria-h1, .comprar-h1, .nosotros-h1, .text-encontranos, .tarjetas-header {
+.galeria-h1,
+.comprar-h1,
+.nosotros-h1,
+.text-encontranos,
+.tarjetas-header {
   padding-top: 50px;
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
@@ -229,13 +245,12 @@ div > h6 {
 
 /* Nosotros */
 .nosotros-titulo {
-  font-size: 40px;
-  margin-top: 60px;
   padding-top: 50px;
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
   font-size: 30px;
   background-color: #F5F5F5;
+  margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px; }
 
