@@ -91,26 +91,26 @@ a.active, a:hover {
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
   font-size: 30px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px; }
-  .linea-venus-Title .linea-maddie-Title {
+  .linea-venus-Title .linea-maddie-Title, .linea-venus-Title .nosotros-titulo {
     padding-top: 50px;
     font-family: 'Syncopate', sans-serif;
     font-style: bold;
     font-size: 30px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     margin-top: 40px;
     padding-bottom: 30px;
     padding-top: 30px; }
 
-.linea-maddie-Title {
+.linea-maddie-Title, .nosotros-titulo {
   padding-top: 50px;
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
   font-size: 30px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px; }
@@ -231,7 +231,7 @@ div > h6 {
   font-family: 'Syncopate', sans-serif;
   font-style: bold;
   font-size: 30px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 40px;
   padding-bottom: 30px;
   padding-top: 30px; }
@@ -255,14 +255,7 @@ div > h6 {
 
 /* Nosotros */
 .nosotros-titulo {
-  padding-top: 50px;
-  font-family: 'Syncopate', sans-serif;
-  font-style: bold;
-  font-size: 30px;
-  background-color: #F5F5F5;
-  margin-top: 40px;
-  padding-bottom: 30px;
-  padding-top: 30px; }
+  font-size: 40px; }
 
 .texto-nosotros {
   margin-top: 50px;

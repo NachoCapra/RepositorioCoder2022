@@ -1,0 +1,4 @@
+﻿Utilize Variables de Colores.
+Realize Map en H1
+Extendi la clase de los titulos en el titulo de nosotros y le cambie el tamaño.
+Añadi etiquetas meta al index, como author y copyright
