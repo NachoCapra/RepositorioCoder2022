@@ -105,6 +105,16 @@ a.active, a:hover {
     padding-bottom: 30px;
     padding-top: 30px; }
 
+.linea-maddie-Title {
+  padding-top: 50px;
+  font-family: 'Syncopate', sans-serif;
+  font-style: bold;
+  font-size: 30px;
+  background-color: #F5F5F5;
+  margin-top: 40px;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
 .productos-area {
   padding-top: 4%;
   display: flex;
